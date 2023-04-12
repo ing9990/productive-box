@@ -8,6 +8,8 @@ jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
+      - name: Print Token
+        run: echo --> ${secrets.GH_TOKEN}  <-- 
       - name: Update gist
         uses: maxam2017/productive-box@master
         env:
